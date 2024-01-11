@@ -53,5 +53,3 @@ function clearUser() {
     cancelaUser();
     RemoveError(1);
 }
-
-console.log(form, inputCampo, spans, validate);
