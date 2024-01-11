@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./javascript.js" defer></script>
+  <title>Validate Form</title>
+</head>
+<body>
+  <h1>Formulario com validação</h1>
+  <div class="container">
+    <section class="form-content">
+      <form id="form" action="">
+        <p class="success">Numeros Validados</p>
+
+        <label for="number">Campo A</label>
+        <input type="number" id="number" class="inputs required" oninput="NumberValidateOne()" />
+        
+        <label for="compared">Campo B</label>
+        <input type="number" id="compared" class="inputs required" />
+        <spam class="span-required">Insira numeros nos campos acima</spam>
+        <spam class="span-required">Campo B precisa ser maior que o Campo A</spam>
+
+        <button id="btn" type="submit" onclick="NumberValidateOne()">Enviar</button>
+        <button id="btn" type="submit" onclick="clearUser()">Reiniciar</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
